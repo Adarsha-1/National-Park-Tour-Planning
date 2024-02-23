@@ -1,0 +1,52 @@
+.admin-container {
+    background-color: #ABD69D;
+    color: white;
+    padding: 20px;
+  }
+  
+  .admin-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .admin-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .admin-container li {
+    background-color: #F5FFF0;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .admin-container li h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .admin-container li p {
+    margin-bottom: 10px;
+  }
+  
+  .admin-container button {
+    background-color: #FFD2CC;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .admin-container button:hover {
+    background-color: #FFB3A7;
+  }
+
+  .break {
+    background-color: white;
+  }

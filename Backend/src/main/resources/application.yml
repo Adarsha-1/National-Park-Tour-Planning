@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: PlayMate
+
+  #servlet:
+  # contextPath: /login
+
+server:
+  servlet:
+    contextPath: "/playmate"
+  port: 8086
