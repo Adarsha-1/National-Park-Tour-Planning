@@ -1,30 +1,100 @@
-.login-form {
-    display: flex;
-    justify-content: center;
+.loginContainer {
+  /* height: calc(100vh-50px); */
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-size: 30%; */
+  /* background: linear-gradient(rgba(246, 222, 208, 0.8), rgba(252, 162, 94, 0.3)),
+    url("https://www.nps.gov/articles/images/GRSA_NPSphoto_960w.jpg?maxwidth=1200&maxheight=1200&autorotate=false"); */
+  /* https://www.nps.gov/articles/images/GRSA_NPSphoto_960w.jpg?maxwidth=1200&maxheight=1200&autorotate=false */
+  /* https://parksexpert.com/wp-content/uploads/2019/12/all-national-parks-ranked-grand-teton.jpg.webp */
+  /* "https://media.cntraveler.com/photos/5ea78b0340ddb8000816120f/master/w_3504,h_2336,c_limit/Grand-Teton-National-Park-GettyImages-108129681.jpg" */
+  /* background-size: cover; */
+  /* overflow: hidden; */
 }
 
-.login-form .card {
-    margin: 7%;
+.wrapper {
+  width: 60%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  border: 20px;
+  -webkit-box-shadow: 7px 2px 33px -3px rgba(108, 108, 108, 0.7);
+  box-shadow: 7px 2px 33px -3px rgba(108, 108, 108, 0.7);
+  background-color: white;
 }
 
-.login-form h4{
-    text-align: center;
-}
-.login-btn:hover {
-    opacity: 70%;
-    transition: 1s ease;
-}
-.login-input {
-    width: 100%;
-    margin-top: 1%;
-    margin-bottom: 4%;
-    background-color: rgb(234, 234, 234);
-    border: 1px solid rgb(218, 218, 218);
-    border-radius: 5px;
-    height: 30px;
+.leftPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.login-container .login-form .card .card-header,
-.login-container .login-form .card .card-body {
+.rightPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centerPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 0.5px;
+  height: 70%;
+  background: lightsalmon;
+}
+
+.loginButton {
+  width: 150px;
+  padding: 15px 20px;
+  border-radius: 6px;
+  background-color: #45269b;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.loginMethodTitle {
+  position: absolute;
+  top: 120px;
+  color: salmon;
+}
+
+.submit {
+  width: 150px;
+  padding: 15px 20px;
+  border-radius: 6px;
+  font-weight: bold;
   border: none;
+  background-color: coral;
+  color: white;
+}
+
+.loginInput {
+  width: 200px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.LerrorMessageSpan {
+  font-size: 14px;
+  color: red;
+  padding: 4px;
+  /* display: none; */
 }

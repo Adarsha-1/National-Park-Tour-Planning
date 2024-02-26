@@ -1,25 +1,55 @@
 package org.example.entity;
 
+import org.example.validation.ValidEmail;
+
 import javax.persistence.*;
 import java.io.Serializable;
+import java.sql.Date;
 
 @Entity
-@Table(name = "User", schema = "adt")
+@Table(name = "User", schema = "dop")
 public class User implements Serializable {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
 
-    @Column(name = "userName")
-    private String userName;
+    @Column(name = "firstName")
+    private String firstName;
+
+    @Column(name = "lastName")
+    private String lastName;
+
+    @Column(name = "dateOfBirth")
+    private Date dateOfBirth;
 
     @Column(name = "password")
     private String password;
 
     @Column(name = "email")
+    @ValidEmail
     private String email;
 
+    @Column(name = "contactNo")
+    private Long contactNo;
+
+    @Column(name = "securityQuestion")
+    private String securityQuestion;
+
+    @Column(name = "securityAnswer")
+    private String securityAnswer;
+
+    @Column(name = "emailEnabled")
+    private boolean emailEnabled;
+
+    @Column(name = "phoneEnabled")
+    private boolean phoneEnabled;
+
+    @Column(name = "userName")
+    private String userName;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "authProvider")
+    private AuthenticationProvider authProvider;
 
     public Integer getId() {
         return id;
@@ -35,6 +65,38 @@ public class User implements Serializable {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Date getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public AuthenticationProvider getAuthProvider() {
+        return authProvider;
+    }
+
+    public void setAuthProvider(AuthenticationProvider authProvider) {
+        this.authProvider = authProvider;
     }
 
     public String getPassword() {
@@ -53,13 +115,66 @@ public class User implements Serializable {
         this.email = email;
     }
 
+    public Long getContactNo() {
+        return contactNo;
+    }
+
+    public void setContactNo(Long contactNo) {
+        this.contactNo = contactNo;
+    }
+
+    public String getSecurityQuestion() {
+        return securityQuestion;
+    }
+
+    public void setSecurityQuestion(String securityQuestion) {
+        this.securityQuestion = securityQuestion;
+    }
+
+    public String getSecurityAnswer() {
+        return securityAnswer;
+    }
+
+    public void setSecurityAnswer(String securityAnswer) {
+        this.securityAnswer = securityAnswer;
+    }
+
+    public boolean getEmailEnabled() {
+        return emailEnabled;
+    }
+
+    public void setEmailEnabled(boolean emailEnabled) {
+        this.emailEnabled = emailEnabled;
+    }
+
+    public boolean isEmailEnabled() {
+        return emailEnabled;
+    }
+
+    public boolean isPhoneEnabled() {
+        return phoneEnabled;
+    }
+
+    public void setPhoneEnabled(boolean phoneEnabled) {
+        this.phoneEnabled = phoneEnabled;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", userName='" + userName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
+                ", contactNo=" + contactNo +
+                ", securityQuestion='" + securityQuestion + '\'' +
+                ", securityAnswer='" + securityAnswer + '\'' +
+                ", emailEnabled=" + emailEnabled +
+                ", phoneEnabled=" + phoneEnabled +
+                ", userName='" + userName + '\'' +
+                ", authProvider=" + authProvider +
                 '}';
     }
 }

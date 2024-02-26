@@ -1,0 +1,57 @@
+.ItinItem{
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2;
+}
+
+
+.parkName{
+    font-size: 20px;
+    color: #0071c2;
+}
+
+.accommName{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.accomInfo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.accomPrice{
+    font-size: 24px;
+}
+
+.travelPlans{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.transportation{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.dates{
+    font-size: 12px;
+}
+

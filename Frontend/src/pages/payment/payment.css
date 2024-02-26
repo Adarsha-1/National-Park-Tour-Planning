@@ -1,0 +1,110 @@
+.paymentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: first baseline;
+  height: 150vh;
+}
+
+.cost {
+  border: 2px solid gray;
+  border-width: 3px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+#submitButton {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  background-color: coral;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.creditCardInfo {
+  background: white;
+}
+
+.totalCostHeader {
+  text-align: center;
+}
+
+.inputpayment {
+  padding: 1em;
+  margin: 0.5em 0;
+  display: block;
+}
+
+main {
+  border: 5px solid lighten($button-color, 40%);
+  font-weight: 700;
+  margin: 2em auto;
+  padding: 1em;
+  width: 600px;
+}
+
+.input-group {
+  width: 60%;
+  display: inline-block;
+  position: relative;
+
+  input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+
+  label {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  svg {
+    position: absolute;
+    right: 10px;
+    bottom: 30%;
+  }
+}
+
+.multi-input {
+  margin-top: 20px;
+  width: 60%;
+  display: flex;
+  gap: 10px;
+}
+
+small {
+  color: red;
+  font-size: 10px;
+  display: block;
+}
+
+.paymentSubmitBtn {
+  border: none;
+  padding: 10px 20px;
+  background-color: coral;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.paymentSubmitBtn:disabled {
+  border: none;
+  padding: 10px 20px;
+  background-color: rgb(235, 222, 217);
+  color: grey;
+  font-weight: bold;
+  border-radius: 5px;
+  /* cursor: pointer; */
+}

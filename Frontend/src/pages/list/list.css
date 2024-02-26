@@ -1,0 +1,80 @@
+.listParkContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.listParkWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+
+.listParkSearch {
+  flex: 1;
+  background-color: rgb(252, 218, 197);
+  padding: 10px;
+  border-radius: 10px;
+  position: sticky;
+  top: 10px;
+  height: max-content;
+}
+
+.listParkTitle {
+  color: gray;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.listParkItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.listParkItem > span {
+  font-size: 12px;
+  background-color: #fff;
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.listParkItem > input {
+  height: 30px;
+  border: none;
+  padding: 5px;
+}
+
+.listParkOptionItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.listParkOptions {
+  padding: 10px;
+}
+
+.listParkSearch > button {
+  padding: 10px;
+  background-color: coral;
+  color: #fff;
+  border: none;
+  width: 100%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.listParkOptionInput {
+  width: 50px;
+}
+
+.listParkResult {
+  flex: 3;
+}

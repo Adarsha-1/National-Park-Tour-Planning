@@ -15,8 +15,26 @@ public class CustomExceptionHandler {
         return new ResponseEntity(error, HttpStatus.BAD_REQUEST);
     }
 
+    @ExceptionHandler(EmailVerificationException.class)
+    public ResponseEntity<?> handelEmailVerificationException(EmailVerificationException exception) {
+        ErrorDetails error = new ErrorDetails(exception.getMessage(), HttpStatus.REQUEST_TIMEOUT);
+        return new ResponseEntity(error, HttpStatus.REQUEST_TIMEOUT);
+    }
+
     @ExceptionHandler(GeneralException.class)
-    public ResponseEntity<?> handleGeneralException(GeneralException exception) {
+    public ResponseEntity<?> handleGeneralExceptions(GeneralException exception) {
+        ErrorDetails error = new ErrorDetails(exception.getMessage(), HttpStatus.BAD_REQUEST);
+        return new ResponseEntity(error, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(InvalidItinerary.class)
+    public ResponseEntity<?> handleInvalidItineraryException(InvalidItinerary exception) {
+        ErrorDetails error = new ErrorDetails(exception.getMessage(), HttpStatus.BAD_REQUEST);
+        return new ResponseEntity(error, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(UserAlreadyPaid.class)
+    public ResponseEntity<?> handleUserAlreadyPaidException(UserAlreadyPaid exception) {
         ErrorDetails error = new ErrorDetails(exception.getMessage(), HttpStatus.BAD_REQUEST);
         return new ResponseEntity(error, HttpStatus.BAD_REQUEST);
     }

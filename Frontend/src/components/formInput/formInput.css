@@ -1,0 +1,28 @@
+.userInputField {
+  margin: 10px 0px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+}
+
+.inputLabel {
+  font-size: 12px;
+  color: gray;
+}
+
+.errorMessageSpan {
+  font-size: 12px;
+  color: red;
+  padding: 2px;
+  display: none;
+}
+
+.userInputField:invalid[isfocussed="true"] ~ .errorMessageSpan {
+  display: block;
+}

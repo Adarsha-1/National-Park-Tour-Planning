@@ -1,11 +1,26 @@
 spring:
   application:
-    name: PlayMate
+    name: TourApp
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: adarsha.reddy98@gmail.com
+    password: uxaeekgxaxvmkqwd
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 
-  #servlet:
-  # contextPath: /login
+#servlet:
+ # contextPath: /login
 
 server:
-  servlet:
-    contextPath: "/playmate"
-  port: 8086
+  #servlet:
+   # contextPath: /login
+  port: 8087
+
+
+encrypt:
+  key: ZERSFDIOK

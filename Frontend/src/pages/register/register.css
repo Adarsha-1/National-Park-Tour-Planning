@@ -1,32 +1,37 @@
-.signup-form {
-    display: flex;
-    justify-content: center;
-}
-.signup-form .card {
-    margin: 7%;
-}
-.signup-form h4{
-    text-align: center;
-}
-.signup-input {
-    width: 100%;
-    margin-top: 1%;
-    margin-bottom: 4%;
-    background-color: rgb(234, 234, 234);
-    border: 1px solid rgb(218, 218, 218);
-    border-radius: 5px;
-    height: 30px;
-}
-.signup-btn:hover {
-    opacity: 70%;
-    transition: 1s ease;
+.registerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150vh;
+  background: linear-gradient(rgba(246, 222, 208, 0.7), rgba(252, 162, 94, 0.3)),
+    url("https://media.cntraveler.com/photos/5ea78b0340ddb8000816120f/master/w_3504,h_2336,c_limit/Grand-Teton-National-Park-GettyImages-108129681.jpg");
+  /* https://www.nps.gov/articles/images/GRSA_NPSphoto_960w.jpg?maxwidth=1200&maxheight=1200&autorotate=false */
+  /* https://parksexpert.com/wp-content/uploads/2019/12/all-national-parks-ranked-grand-teton.jpg.webp */
+  /* "https://media.cntraveler.com/photos/5ea78b0340ddb8000816120f/master/w_3504,h_2336,c_limit/Grand-Teton-National-Park-GettyImages-108129681.jpg" */
+  background-size: cover;
 }
 
-.signup-container .signup-form .card .card-header,
-.signup-container .signup-form .card .card-body {
+.registerForm {
+  background: white;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.registerTitle {
+  text-align: center;
+  color: salmon;
+}
+
+.registerSubmitButton {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
   border: none;
-}
-
-.card-header {
-    background-color: "#FFD2CC"
+  background-color: coral;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
